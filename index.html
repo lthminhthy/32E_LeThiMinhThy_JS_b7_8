@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-4">
+                <input type="number" class="form-control " id="soThem">
+            </div>
+            <div class="col-4">
+                <button class="btn btn-danger" id="btnThemSo">Thêm số</button>
+            </div>
+        </div>
+        <div class="alert alert-danger mt-4" id="themSo">
+            <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+        </div>
+
+        <div class="alert alert-secondary">
+            1. Tổng số dương
+            <div class="row">
+                <div class="col-4">
+                    <button class="btn btn-danger mt-2 " id="btnTongSoDuong">Tính tổng</button>
+                </div>
+            </div>
+            <div class="alert alert-danger mt-3" id="ketQua_1">
+                <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="alert alert-secondary">
+            2. Đếm số dương
+            <div class="row">
+                <div class="col-4">
+                    <button class="btn btn-danger mt-2 " id="btnDemSoDuong">Đếm số</button>
+                </div>
+            </div>
+            <div class="alert alert-danger mt-3" id="ketQua_2">
+                <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="alert alert-secondary">
+            3. Tìm số nhỏ nhất
+            <div class="row">
+                <div class="col-4">
+                    <button class="btn btn-danger mt-2" id="btnTimSoNhoNhat">Tìm số nhỏ nhất</button>
+                </div>
+            </div>
+            <div class="alert alert-danger mt-3" id="ketQua_3">
+                <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="alert alert-secondary">
+            4. Tìm số dương nhỏ nhất
+            <div class="row">
+                <div class="col-4">
+                    <button class="btn btn-danger mt-2 " id="btnDuongNhoNhat">Tìm số dương nhỏ nhất</button>
+                </div>
+            </div>
+            <div class="alert alert-danger mt-3" id="ketQua_4">
+                <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="alert alert-secondary">
+            5. Tìm số chẵn cuối cùng
+            <div class="row">
+                <div class="col-4">
+                    <button class="btn btn-danger mt-2 " id="btnSoChanCuoiCung">Tìm số chẵn</button>
+                </div>
+            </div>
+            <div class="alert alert-danger mt-3" id="ketQua_5">
+                <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="alert alert-secondary">
+            6. Đổi chỗ
+            <div class="row">
+                <div class="col-6">
+                    <input class="form-control mt-2 " id="viTri1" placeholder="Nhập số vị trí 1"></input>
+                </div>
+                <div class="col-6">
+                    <input class="form-control mt-2 " id="viTri2" placeholder="Nhập số vị trí 2"></input>
+                </div>
+                <div class="col-4">
+                    <button class="btn btn-danger mt-2 " id="btnDoiCho">Đổi chỗ</button>
+                </div>
+            </div>
+            <div class="alert alert-danger mt-3" id="ketQua_6">
+                <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+            </div>
+        </div>
+
+        <div class="alert alert-secondary">
+            7. Sắp xếp tăng dần
+            <div class="row">
+                <div class="col-4">
+                    <button class="btn btn-danger mt-2 " id="btnSapXepTangDan">Sắp xếp</button>
+                </div>
+            </div>
+            <div class="alert alert-danger mt-3" id="ketQua_7">
+                <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="alert alert-secondary">
+            8. Tìm số nguyên tố đầu tiên
+            <div class="row">
+                <div class="col-4">
+                    <button class="btn btn-danger mt-2 " id="btnSoNguyenToDauTien">Tìm số nguyên tố đầu tiên</button>
+                </div>
+            </div>
+            <div class="alert alert-danger mt-3" id="ketQua_8">
+                <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="alert alert-secondary">
+            9. Đếm số nguyên
+            <div class="row">
+                <div class="col-6">
+                    <input class="form-control mt-2 " id="soThem_9" placeholder="Nhập số"></input>
+                </div>
+                <div class="col-4">
+                    <button class="btn btn-danger mt-2" id="btnThemSo_9">Thêm số</button>
+                </div>
+            </div>
+            <div class="alert alert-danger mt-3" id="themSo_9">
+                <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+            </div>
+            <div class="col-4">
+                <button class="btn btn-danger mt-2 " id="btnDemSoNguyen_9">Đếm số nguyên</button>
+            </div>
+            <div class="alert alert-danger mt-3" id="ketQua_9">
+                <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="alert alert-secondary">
+            10. So sánh số lượng số âm và dương
+            <div class="row">
+                <div class="col-4">
+                    <button class="btn btn-danger mt-2 " id="btnSoSanh">So sánh</button>
+                </div>
+            </div>
+            <div class="alert alert-danger mt-3" id="ketQua_10">
+                <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+            </div>
+        </div>
+
+    </div>
+
+
+    </div>
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="./util/method.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+    
+
+</html>
